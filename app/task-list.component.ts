@@ -3,19 +3,24 @@ import { Task } from './task.model';
 
 @Component({
   selector: 'task-list',
-  template: `
-  <ul>
-  <li (click)="isDone(currentTask)" *ngFor="let currentTask of childTaskList">{{currentTask.description}} <button (click)="editButtonHasBeenClicked(currentTask)">Edit!</button></li>
-  </ul>
-  `
+  templateUrl: 'app/task-list.component.html',
 })
 
 export class TaskListComponent {
   @Input() childTaskList: Task[];
   @Output() clickSender = new EventEmitter();
+  filterByCompleteness :string = "incompleteTasks";
 
   editButtonHasBeenClicked(taskToEdit: Task) {
     this.clickSender.emit(taskToEdit);
+  }
+
+  onChange(optionFromMenu){
+    this.filterByCompleteness = optionFromMenu;
+  }
+
+  toggleDone(clickedTask: Task, setCompleteness: boolean) {
+    clickedTask.done = setCompleteness;
   }
 
   isDone(clickedTask: Task) {

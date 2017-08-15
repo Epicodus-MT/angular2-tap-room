@@ -3,20 +3,7 @@ import { Task } from './task.model';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <div class="container">
-      <h1>To Do List for {{month}}/{{day}}/{{year}}</h1>
-      <h3>{{currentFocus}}</h3>
-
-      <task-list [childTaskList]="masterTaskList" (clickSender)="editTask($event)"></task-list>
-
-      <!-- <new-task (newTaskSender)="addTask($event)"></new-task> -->
-
-      <hr>
-      <edit-task [childSelectedTask]="selectedTask" (doneButtonClickedSender)="finishedEditing()"></edit-task>
-      <new-task></new-task>
-    </div>
-  `
+  templateUrl: 'app/app.component.html'
 })
 
 export class AppComponent {
@@ -38,7 +25,11 @@ export class AppComponent {
   }
 
   finishedEditing() {
-     this.selectedTask = null;
+    this.selectedTask = null;
+  }
+
+  addTask(newTaskFromChild: Task) {
+    this.masterTaskList.push(newTaskFromChild);
   }
 
 }
