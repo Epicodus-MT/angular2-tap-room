@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Task } from './task.model';
+import { Keg } from './keg.model';
 
 @Component({
   selector: 'app-root',
@@ -7,29 +7,27 @@ import { Task } from './task.model';
 })
 
 export class AppComponent {
-  currentFocus: string = 'Angular Homework';
-  currentTime = new Date();
-  month: number = this.currentTime.getMonth() + 1;
-  day: number = this.currentTime.getDate();
-  year: number = this.currentTime.getFullYear();
-  selectedTask = null;
+  subtitle: string = 'Log Pint Pours and Track Keg Status';
 
-  masterTaskList: Task[] = [
-    new Task('Finish weekend Angular homework for Epicodus course', 3),
-    new Task('Begin brainstorming possible JavaScript group projects', 2),
-    new Task('Add README file to last few Angular repos on GitHub', 2)
+  masterKegList: Keg[] = [
+    new Keg('SpaceDust', 'Elysian', 8, 8.2),
+    new Keg('Scrimshaw', 'North Coast', 6, 5),
+    new Keg('OctoberFest', 'Sam Adams', 7, 6),
+    new Keg('Sunbru', 'FourPeak', 4, 8)
   ];
 
-  editTask(clickedTask) {
-    this.selectedTask = clickedTask;
-  }
+  selectedKeg: Keg = null;
 
+  editKeg(clickedKeg) {
+    this.selectedKeg = clickedKeg;
+  }
   finishedEditing() {
-    this.selectedTask = null;
+    this.selectedKeg = null;
   }
-
-  addTask(newTaskFromChild: Task) {
-    this.masterTaskList.push(newTaskFromChild);
+  subtractPint(clickedKeg) {
+    this.selectedKeg = clickedKeg;
   }
-
+  addKeg(newKegFromChild: Keg) {
+    this.masterKegList.push(newKegFromChild);
+  }
 }

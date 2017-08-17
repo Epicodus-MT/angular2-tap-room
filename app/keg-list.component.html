@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <li [class]="shortageColor(currentKeg)" *ngFor="let currentKeg of childKegList">
+    <h4>{{currentKeg.name}}</h4>Price: <strong>$ {{currentKeg.price}}</strong>
+    <h6>Pints Remaining: {{ currentKeg.pints }}</h6>
+    <button (click)="editButtonHasBeenClicked(currentKeg)">Edit Keg</button>
+        <button (click) = "pintButtonHasBeenClicked(currentKeg)">Pint Sold </button>
+  </li>
+</ul>

@@ -1,21 +1,21 @@
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule }       from '@angular/core';
+import { BrowserModule }  from '@angular/platform-browser';
 import { AppComponent }   from './app.component';
-import { FormsModule }  from '@angular/forms';
-import { TaskListComponent }  from './task-list.component';
-import { EditTaskComponent }  from './edit-task.component';
-import { NewTaskComponent } from './new-task.component';
-import { CompletenessPipe } from './completeness.pipe';
+import { FormsModule }    from '@angular/forms';
+import { KegListComponent} from './keg-list.component';
+import { EditKegComponent} from './edit-keg.component';
+import { PintSoldComponent } from './pint-sold.component';
+import { NewKegComponent} from './new-keg.component';
 
 @NgModule({
   imports: [ BrowserModule,
-            FormsModule ],
+              FormsModule ],
   declarations: [ AppComponent,
-                  TaskListComponent,
-                  EditTaskComponent,
-                  NewTaskComponent,
-                CompletenessPipe],
-  bootstrap:    [ AppComponent ]
+                  KegListComponent,
+                  EditKegComponent,
+                  PintSoldComponent,
+                  NewKegComponent],
+  bootstrap: [ AppComponent ]
 })
 
 export class AppModule { }
