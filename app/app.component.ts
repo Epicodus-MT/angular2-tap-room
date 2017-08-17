@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Keg } from './keg.model';
+import { Task } from './task.model';
 
 @Component({
   selector: 'app-root',

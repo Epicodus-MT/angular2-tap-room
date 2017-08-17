@@ -17,7 +17,7 @@ _This application allows patrons to see a list/menu of all available kegs (name,
 Within the repository you'll find the following directories and files:
 
 ```
-angular2-tap-room/
+angular2-keg-tracker/
 ├── app/
 |    └── app.component.html
 ├── .gitignore
@@ -31,8 +31,8 @@ angular2-tap-room/
 ## Setup/Installation Requirements
 To run this program:
 * _LOCAL: Go to Terminal_
-* `git clone https://github.com/Epicodus-MT/angular2-tap-room.git`
-* `cd angular2-tap-room`
+* `git clone https://github.com/Epicodus-MT/angular2-keg-tracker.git`
+* `cd angular2-keg-tracker`
 * `npm install`
 * `bower install`
 

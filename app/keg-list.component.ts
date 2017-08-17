@@ -1,9 +1,9 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Keg } from './keg.model';
+import { Task } from './task.model';
 
 @Component({
   selector: 'keg-list',
-  templateUrl: 'app/task-list.component.html',
+  templateUrl: 'app/keg-list.component.html',
 })
 
 export class KegListComponent {

@@ -1,5 +1,6 @@
+
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Keg } from './keg.model';
+import { Task } from './task.model';
 
 @Component({
   selector: 'edit-keg',
