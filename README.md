@@ -1,17 +1,19 @@
-<img src="epicodus.png" align="right" width: "500" >
+<img src="epicodus.png" align="right"/>
 
-# Angular To-Do List
+# Angular Tap Room
 
 > **Technologies Used** - Javascript, HTML, Firebase API.
 > **IDE Used** - Atom.
 
 #### By _**Mara Timberlake**_
 
-Application for...
+Angular app for a bar's employees and patrons to track the keg quantities and properties.
 
 ## Description
 
-_This application allows users to..._
+_This application allows patrons to see a list/menu of all available kegs (name, brand, price and alcoholContent). Keg prices are color-coded for easy readability and user may view beers by alcohol content - stronger to weaker._
+_This application allows employees to add kegs to the list, edit a keg's properties, click button decrease the number of pints left by 1 with each purchase, and see kegs with less than 10 pints left (to anticipate a keg change).
+_All users can see how many pints are left in a keg._
 
 ## What's included
 Within the repository you'll find the following directories and files:
@@ -31,7 +33,8 @@ angular2-to-do/
 ## Setup/Installation Requirements
 To run this program:
 * _LOCAL: Go to Terminal_
-* `git clone https://github.com/Epicodus-MT/ember-message-board.git
+* `git clone https://github.com/Epicodus-MT/angular2-tap-room.git`
+* `cd angular2-tap-room`
 * `npm install`
 * `bower install`
 
