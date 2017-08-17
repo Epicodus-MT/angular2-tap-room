@@ -1,8 +1,8 @@
 <img src="epicodus.png" align="right"/>
 
-# Angular Tap Room
+# Angular2 Tap Room
 
-> **Technologies Used** - Javascript, HTML, Firebase API.
+> **Technologies Used** - TypeScript, Javascript, HTML, Firebase API.
 > **IDE Used** - Atom.
 
 #### By _**Mara Timberlake**_
@@ -11,9 +11,7 @@ Angular app for a bar's employees and patrons to track the keg quantities and pr
 
 ## Description
 
-_This application allows patrons to see a list/menu of all available kegs (name, brand, price and alcoholContent). Keg prices are color-coded for easy readability and user may view beers by alcohol content - stronger to weaker._
-_This application allows employees to add kegs to the list, edit a keg's properties, click button decrease the number of pints left by 1 with each purchase, and see kegs with less than 10 pints left (to anticipate a keg change).
-_All users can see how many pints are left in a keg._
+_This application allows patrons to see a list/menu of all available kegs (name, brand, price and alcoholContent). Keg prices are color-coded for easy readability and user may view beers by alcohol content - stronger to weaker. This application allows employees to add kegs to the list, edit a keg's properties, click button decrease the number of pints left by 1 with each purchase, and see kegs with less than 10 pints left (to anticipate a keg change). All users can see how many pints are left in a keg._
 
 ## What's included
 Within the repository you'll find the following directories and files:
