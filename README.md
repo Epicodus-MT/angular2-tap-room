@@ -17,7 +17,7 @@ _This application allows patrons to see a list/menu of all available kegs (name,
 Within the repository you'll find the following directories and files:
 
 ```
-angular2-to-do/
+angular2-tap-room/
 ├── app/
 |    └── app.component.html
 ├── .gitignore
