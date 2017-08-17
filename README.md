@@ -1,4 +1,4 @@
-<img src="epicodus.png" align="right" width: "500"/>
+<img src="epicodus.png" align="right" width: "500" >
 
 # Angular To-Do List
 
